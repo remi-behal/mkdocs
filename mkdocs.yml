@@ -1,0 +1,65 @@
+site_name: RbTek Site Of Amazing Tips
+site_url: https://mkdocs.rbtek.space
+site_dir: /site
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to light mode    
+      primary: teal
+      accent: lime
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+      primary: teal
+      accent: purple 
+
+plugins:
+  - social
+  - mkdocs-video
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/remi-behal
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/remibehal/
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+extra_javascript:
+  - javascripts/extra.js
+
+repo_url: https://github.com/remi-behal/mkdocs
+
+copyright: |
+  &copy; 2023 <a href="https://github.com/remi-behal"  target="_blank" rel="noopener">Remi Behal</a>
