@@ -1,6 +1,5 @@
 site_name: RbTek Site Of Amazing Tips
 site_url: https://mkdocs.rbtek.space
-site_dir: /site
 theme:
   name: material
   features:
