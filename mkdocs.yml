@@ -37,6 +37,9 @@ extra:
       link: https://github.com/remi-behal
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/remibehal/
+      
+extra_css:
+  - stylesheets/extra.css
 
 markdown_extensions:
   - pymdownx.highlight:
