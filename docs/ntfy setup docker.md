@@ -11,30 +11,22 @@ You can use it for other tasks too, such as disk space nofitfier, which I plan o
 
 For full ntfy documentation, see [docs.ntfy.sh](https://docs.ntfy.sh/)
 
-## Docker compose
+## Docker compose uptime-kuma
 ``` yaml
 services:
-    ntfy:
-        image: binwiederhier/ntfy
-        container_name: ntfy
-        command:
-        - serve
+    uptime-kuma:
+        image: louislam/uptime-kuma:latest
+        container_name: uptime-kuma
         environment:
-        - TZ=Europe/Dublin
-        user: 9999:999 #adapt to your own PUID:PGID
+            - PUID=999 #your user id
+            - PGID=999 #your group id
+            - TZ=Europe/Dublin
         volumes:
-        - /srv/dev-disk/configs/ntfy/var/cache/ntfy:/var/cache/ntfy
-        - /srv/dev-disk/configs/ntfy/var/lib/ntfy:/var/lib/ntfy
-        - /srv/dev-disk/configs/ntfy/etc/ntfy:/etc/ntfy
+            - /srv/<your disk>/configs/uptimekuma/app/data:/app/data
+            - /var/run/docker.sock:/var/run/docker.sock
         ports:
-        - 8880:80
-        healthcheck: # optional: remember to adapt the host:port to your environment
-            test: ["CMD-SHELL", "wget -q --tries=1 http://<your-host-or-localhost-or-ip-address>:8880/v1/health -O - | grep -Eo '\"healthy\"\\s*:\\s*true' || exit 1"]
-            interval: 60s
-            timeout: 10s
-            retries: 3
-            start_period: 40s
-        restart: unless-stopped
+            - 3001:3001  # <Host Port>:<Container Port>
+        restart: always  
 ```
 
 ## Limitations
