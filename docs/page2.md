@@ -27,7 +27,6 @@ Then video is added like so
 ```
 ![type:video](https://www.youtube.com/embed/LXb3EKWsInQ)
 ```
-![type:video](https://www.youtube.com/embed/LXb3EKWsInQ)
 
 Some text below video, to see if it scales video height on mobile....it did not
 

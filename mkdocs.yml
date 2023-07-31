@@ -29,7 +29,7 @@ theme:
 
 plugins:
   - social
-  - mkdocs-video
+  #- mkdocs-video
 
 extra:
   social:
