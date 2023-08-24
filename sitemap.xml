@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://mkdocs.rbtek.space/</loc>
+         <lastmod>2023-08-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://mkdocs.rbtek.space/new%20internet%20setup/</loc>
+         <lastmod>2023-08-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://mkdocs.rbtek.space/ntfy%20setup%20docker/</loc>
+         <lastmod>2023-08-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://mkdocs.rbtek.space/page2/</loc>
+         <lastmod>2023-08-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
